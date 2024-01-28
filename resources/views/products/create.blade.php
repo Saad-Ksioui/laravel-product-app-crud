@@ -12,24 +12,24 @@
     @method('post')
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" name="name">
+      <input type="text" class="form-control" id="name" value="{{old('name')}}" name="name">
     </div>
     <div class="form-group">
       <label for="quantity">Quantity</label>
-      <input type="text" class="form-control" id="quantity" name="qty">
+      <input type="text" class="form-control" id="quantity" value="{{old('qty')}}" name="qty">
     </div>
     <div class="form-group">
       <label for="price">Price</label>
-      <input type="text" class="form-control" id="price" name="price">
+      <input type="text" class="form-control" id="price" value="{{old('price')}}" name="price">
     </div>
 
     <div class="form-group">
       <label for="description">Description</label>
-      <input type="text" class="form-control" id="description" name="description">
+      <input type="text" class="form-control" id="description" value="{{old('description')}}" name="description">
     </div>
     <div class="form-group">
       <label for="image">Image</label>
-      <input type="text" class="form-control" id="image" name="image">
+      <input type="text" class="form-control" id="image" value="{{old('image')}}" name="image">
     </div>
 
     <input type="submit" class="btn btn-primary" value="Submit"/>
