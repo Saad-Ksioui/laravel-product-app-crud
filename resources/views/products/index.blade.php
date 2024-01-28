@@ -18,7 +18,7 @@
         @foreach ($products as $product)
 
             <div class="card m-3" style="width: 20rem;">
-              <img src="{{ $product->image }}" class="card-img-top w-5 h-5" style="width: 20rem;height: 18rem;object-fit: contain;" alt="{{$product->name}}">
+              <img src="{{ $product->image }}" class="card-img-top w-5 h-5" style="width: 20rem;height: 18rem;object-fit: cover;" alt="{{$product->name}}">
               <div class="card-body">
                 <h5 class="card-title">{{$product->name}}</h5>
                 <h6>${{$product->price}}</h6>
